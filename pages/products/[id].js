@@ -107,14 +107,13 @@ export default function Home(props) {
                           En Stock
                         </Alert>
                       ) : (
-                        <Alert icon={false} severity="error">
-                          No disponible
+                        <Alert icon={false} severity="success">
+                          En Stock
                         </Alert>
                       )}
                     </Grid>
                   </Grid>
                 </ListItem>
-                {product.quantity > 0 && (
                   <>
                     <ListItem>
                       <Grid container justify="flex-end">
@@ -150,7 +149,6 @@ export default function Home(props) {
                       </Button>
                     </ListItem>
                   </>
-                )}
               </List>
             </Card>
           </Grid>
